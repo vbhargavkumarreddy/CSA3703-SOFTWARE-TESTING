@@ -1,0 +1,15 @@
+package kumar;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+public class firefox {
+	 public static void main(String[] args) {
+	       // System.setProperty("webdriver.gecko.driver", "C:/drivers/geckodriver.exe");
+	        //FirefoxOptions options = new FirefoxOptions();
+	       // options.setBinary("C:/Program Files/Mozilla Firefox/firefox.exe"); // use your real path here
+	        WebDriver driver = new FirefoxDriver();
+	        driver.manage().window().maximize();
+	        driver.get("https://www.google.com");
+	        System.out.println("Title: " + driver.getTitle());
+	    }
+	}
